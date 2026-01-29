@@ -1,1 +1,19 @@
 @import 'tailwindcss';
+
+@theme {
+  /* 1. Custom Fonts */
+  --font-manrope: 'Manrope', sans-serif;
+  --font-nunito: 'Nunito', sans-serif;
+
+  /* 2. Brand Colors */
+  --color-brand-blue: #3b82f6;
+  --color-brand-green: #22c55e;
+  --color-brand-navy: #1e3a8a;
+
+  /* 3. Custom Gradients */
+  --bg-hero-gradient: linear-gradient(
+    to right,
+    rgba(59, 130, 246, 0.8),
+    rgba(34, 197, 94, 0.8)
+  );
+}
