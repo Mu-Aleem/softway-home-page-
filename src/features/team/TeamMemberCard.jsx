@@ -23,7 +23,7 @@ const TeamMemberCard = ({ name, role, image, description }) => {
             </p>
             <p className="font-nunito text-[#64748B] text-[16px] leading-relaxed pt-2">
               {description ||
-                'Alexander drives innovation and growth, building strong teams and delivering high-quality solutions that make a real impact.'}
+                "Alexander drives innovation and growth, building strong teams and delivering high-quality solutions that make a real impact."}
             </p>
           </div>
         </div>

@@ -4,48 +4,47 @@ import logo from "../../assets/mainLogo.svg";
 const Footer = () => {
   return (
     <footer
-      className="relative pt-68 pb-2 px-6 -mt-52 z-10"
+      className="relative pt-32 md:pt-68 pb-4 md:pb-2 px-4 md:px-6 -mt-32 md:-mt-52 z-10"
       style={{
         background: "linear-gradient(107.5deg, #2F80ED 14.05%, #2AAB4E 78.48%)",
-        // minHeight: '600px'
       }}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-center gap-6 md:gap-0 mb-8 md:mb-12">
           <div className="md:col-span-1">
             <img
               src={logo}
               alt="Softway"
-              className="h-10 w-auto brightness-0 invert mb-6"
+              className="h-8 md:h-10 w-auto brightness-0 invert mb-0 md:mb-6"
             />
           </div>
 
-          <div className="md:col-span-1">
-            <p className="text-white/80 text-sm font-manrope">
+          <div className="md:col-span-1 order-3 md:order-2">
+            <p className="text-white/80 text-xs md:text-sm font-manrope text-center md:text-left">
               © 2020 Softway. All rights reserved.
             </p>
           </div>
 
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-4">
+          <div className="md:col-span-2 order-2 md:order-3">
+            <div className="flex items-center gap-3 md:gap-4">
               <a
                 href="#"
-                className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition shadow-sm"
+                className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition shadow-sm"
               >
                 <span className="text-gray-700 font-bold text-xs">f</span>
               </a>
               <a
                 href="#"
-                className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition shadow-sm"
+                className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition shadow-sm"
               >
                 <span className="text-gray-700 font-bold text-xs">@</span>
               </a>
               <a
                 href="#"
-                className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition shadow-sm"
+                className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-100 transition shadow-sm"
               >
                 <svg
-                  className="w-4 h-4 text-gray-700"
+                  className="w-3.5 h-3.5 md:w-4 md:h-4 text-gray-700"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
