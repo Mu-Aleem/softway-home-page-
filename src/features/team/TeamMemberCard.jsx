@@ -1,7 +1,7 @@
 const TeamMemberCard = ({ name, role, image, description }) => {
   return (
     <div className="relative mt-12 group">
-      <div className="relative p-[1px] rounded-2xl bg-linear-to-br from-brand-blue to-brand-green">
+      <div className="relative p-px rounded-2xl bg-linear-to-br from-brand-blue to-brand-green">
         <div className="bg-white rounded-[calc(1rem-1px)] p-8 pt-16 h-full transition-transform duration-300 group-hover:-translate-y-1">
           <div className="absolute -top-16 left-6">
             <div className="w-24 h-24 rounded-full ">

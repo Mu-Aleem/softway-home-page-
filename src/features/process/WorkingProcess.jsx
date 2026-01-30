@@ -1,26 +1,34 @@
-import React from 'react';
+import React from "react";
+import clipBoardIcon from "../../assets/process/clipBoardIcon.svg";
+import gitBranchIcon from "../../assets/process/gitBranchIcon.svg";
+import paintBrushIcon from "../../assets/process/paintBrushIcon.svg";
 
 const WorkingProcess = () => {
   const steps = [
     {
-      title: 'Payment Platforms',
-      desc: 'Secure, scalable systems for digital payments, wallets, and transaction processing.',
-      icon: '📋',
+      title: "Payment Platforms",
+      desc: "Secure, scalable systems for digital payments, wallets, and transaction processing.",
+      icon: clipBoardIcon,
     },
     {
-      title: 'Remittance Solutions',
-      desc: 'End-to-end software for fast, compliant cross-border money transfers.',
-      icon: '🖌️',
+      title: "Remittance Solutions",
+      desc: "End-to-end software for fast, compliant cross-border money transfers.",
+      icon: paintBrushIcon,
     },
     {
-      title: 'API & Integrations',
-      desc: 'Robust financial APIs connecting banks, fintechs, and third-party services.',
-      icon: '🔗',
+      title: "API & Integrations",
+      desc: "Robust financial APIs connecting banks, fintechs, and third-party services.",
+      icon: gitBranchIcon,
     },
     {
-      title: 'Card Issuing',
-      desc: 'Build and launch custom card programs with global reach and financial flexibility.',
-      icon: '💳',
+      title: "Compliance & Security",
+      desc: "Built in regulatory compliance, data protection, and fraud prevention to ensure safe and trusted financial operations.",
+      icon: clipBoardIcon,
+    },
+    {
+      title: "Custom Fintech Development",
+      desc: "Tailor made financial software designed to match your business model, market requirements and growth goals.",
+      icon: paintBrushIcon,
     },
   ];
 
@@ -37,14 +45,18 @@ const WorkingProcess = () => {
           </p>
         </div>
 
-        <div className="flex md:grid md:grid-cols-3 lg:grid-cols-4 overflow-x-auto md:overflow-x-hidden gap-6 px-8 md:px-16 pb-8 snap-x no-scrollbar">
+        <div className="flex overflow-x-auto gap-6 px-16 pb-8 no-scrollbar">
           {steps.map((step, i) => (
             <div
               key={i}
-              className="min-w-[85%] sm:min-w-[45%] md:min-w-0 snap-center bg-white/10 backdrop-blur- rounded-[16px] p-10 flex flex-col items-start transition-all hover:bg-white/15"
+              className="min-w-[30%] snap-center bg-white/10 backdrop-blur- rounded-2xl p-10 flex flex-col items-start transition-all hover:bg-white/15"
             >
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-8 text-xl">
-                {step.icon}
+                <img
+                  src={step.icon}
+                  alt={`${step.title} icon`}
+                  className="w-6 h-6"
+                />
               </div>
 
               <h3 className="font-manrope text-2xl font-bold text-white mb-4 whitespace-nowrap">

@@ -1,11 +1,11 @@
-import part3 from '../../assets/partners/part3.svg';
-import part2 from '../../assets/partners/part2.svg';
-import part1 from '../../assets/partners/part1.svg';
+import bananaPayIcon from '../../assets/partners/bananaPayIcon.svg';
+import tawakalExpressIcon from '../../assets/partners/tawakalExpressIcon.svg';
+import tawakalUkIcon from '../../assets/partners/tawakalUkIcon.svg';
 
 const partners = [
-  { name: 'BananaPay', logo: part3 },
-  { name: 'Tawakal Express', logo: part1 },
-  { name: 'Tawakal UK', logo: part2 },
+  { name: 'BananaPay', logo: bananaPayIcon },
+  { name: 'Tawakal Express', logo: tawakalExpressIcon },
+  { name: 'Tawakal UK', logo: tawakalUkIcon },
 ];
 
 const PartnerLogos = () => {
